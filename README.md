@@ -34,6 +34,11 @@ To run a simple example type:
 java -Dlog4j.configurationFile=src/test/resources/log4j2.xml -cp lib/OpenForecast-0.5.0.jar:target/egads-jar-with-dependencies.jar com.yahoo.egads.Egads src/test/resources/sample_config.ini src/test/resources/sample_input.csv
 ```
 
+In my environment,
+
+```shell
+java -Dlog4j.configurationFile=src/test/resources/log4j2.xml -cp target/egads-0.1-SNAPSHOT-jar-with-dependencies.jar com.yahoo.egads.Egads src/test/resources/sample_config.ini src/test/resources/sample_input.csv
+```
 which produces the following picture (Note that you can enable this UI by setting `OUTPUT` config key to `GUI` in `sample_config.ini`).
 
 ![gui](doc/ui.png "EGADS GUI")
